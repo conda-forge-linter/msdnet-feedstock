@@ -10,7 +10,7 @@ source:
   sha256: e1e9f53cb662f6368a0389ca9a99583f8e964cef2c53f83742f6466e02d26562
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv  # [linux]
   script: {{ PYTHON }} setup.py bdist_wheel --plat-name macosx-10.9-x86_64 && pip install --no-index --find-links=dist msdnet  # [osx]
